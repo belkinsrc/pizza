@@ -1,0 +1,7 @@
+---
+description: "This rule enforces a unified commit message convention in Russian."
+alwaysApply: false
+---
+
+- Always name commits in Russian.
+- Commits must follow this template: <type>(<scope>): <short description>. An extended description may be added if necessary.
