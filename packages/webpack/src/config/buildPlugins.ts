@@ -1,13 +1,11 @@
 import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import { BuildOptions } from "./types";
+import type { TPaths } from "./types.ts";
 
-const buildPlugins = (
-  path: BuildOptions["path"],
-): webpack.WebpackPluginInstance[] => {
+const buildPlugins = (paths: TPaths): webpack.WebpackPluginInstance[] => {
   return [
-    new HtmlWebpackPlugin({ template: path.html }),
+    new HtmlWebpackPlugin({ template: paths.html }),
     new MiniCssExtractPlugin(),
   ];
 };

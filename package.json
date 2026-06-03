@@ -1,37 +1,8 @@
 {
-  "name": "next-pizza",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "webpack serve --env port=5000 --open",
-    "build:dev": "webpack",
-    "build:prod": "webpack --env production"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.1",
-    "@types/node": "^25.3.0",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "css-loader": "^7.1.4",
-    "html-webpack-plugin": "^5.6.6",
-    "mini-css-extract-plugin": "^2.10.0",
-    "postcss": "^8.5.6",
-    "postcss-loader": "^8.2.1",
-    "style-loader": "^4.0.0",
-    "tailwindcss": "^4.2.1",
-    "ts-loader": "^9.5.4",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3",
-    "webpack": "^5.105.2",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.3"
-  },
-  "dependencies": {
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
-  }
+  "name": "pizza-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }

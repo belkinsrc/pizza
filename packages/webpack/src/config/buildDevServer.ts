@@ -1,12 +1,12 @@
 import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
-import { BuildOptions, ConfigParams } from "./types";
+import type { TConfigParams, TPaths } from "./types.ts";
 
 const buildDevServer = (
-  path: BuildOptions["path"],
-  port: ConfigParams["port"],
+  paths: TPaths,
+  port: TConfigParams["port"],
 ): DevServerConfiguration => {
   return {
-    static: path.output,
+    static: paths.output,
     port: port,
     hot: true,
   };
