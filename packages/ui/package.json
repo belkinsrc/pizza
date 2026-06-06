@@ -15,6 +15,9 @@
     "./hooks/*": "./src/hooks/*.ts",
     "./globals.css": "./src/styles/globals.css"
   },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",

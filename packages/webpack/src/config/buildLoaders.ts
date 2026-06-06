@@ -7,9 +7,7 @@ import type { TConfigParams } from "./types.ts";
 
 const require = createRequire(import.meta.url);
 
-const buildLoaders = (
-  isProd: TConfigParams["isProd"],
-): webpack.RuleSetRule[] => {
+const buildLoaders = (isProd: TConfigParams["isProd"]): webpack.RuleSetRule[] => {
   return [
     {
       test: /\.tsx?$/,

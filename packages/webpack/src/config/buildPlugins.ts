@@ -4,10 +4,7 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import type { TPaths } from "./types.ts";
 
 const buildPlugins = (paths: TPaths): webpack.WebpackPluginInstance[] => {
-  return [
-    new HtmlWebpackPlugin({ template: paths.html }),
-    new MiniCssExtractPlugin(),
-  ];
+  return [new HtmlWebpackPlugin({ template: paths.html }), new MiniCssExtractPlugin()];
 };
 
 export { buildPlugins };
