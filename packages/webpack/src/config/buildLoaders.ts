@@ -1,6 +1,11 @@
 import webpack from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+
+import { createRequire } from "module";
+
 import type { TConfigParams } from "./types.ts";
+
+const require = createRequire(import.meta.url);
 
 const buildLoaders = (
   isProd: TConfigParams["isProd"],
@@ -8,15 +13,14 @@ const buildLoaders = (
   return [
     {
       test: /\.tsx?$/,
-      use: "ts-loader",
+      use: require.resolve("ts-loader"),
     },
     {
       test: /\.css$/i,
       use: [
-        "style-loader",
-        isProd ? MiniCssExtractPlugin.loader : "",
-        "css-loader",
-        "postcss-loader",
+        isProd ? MiniCssExtractPlugin.loader : require.resolve("style-loader"),
+        require.resolve("css-loader"),
+        require.resolve("postcss-loader"),
       ],
     },
   ];

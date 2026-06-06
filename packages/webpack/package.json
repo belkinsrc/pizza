@@ -2,7 +2,10 @@
   "name": "@pizza/webpack",
   "version": "1.0.0",
   "type": "module",
-  "main": "./src/index.ts",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "dependencies": {
     "html-webpack-plugin": "^5.6.6",
     "mini-css-extract-plugin": "^2.10.0",
