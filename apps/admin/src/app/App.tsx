@@ -1,10 +1,13 @@
-import { Button } from "@pizza/ui";
+import { Outlet } from "react-router";
 
 const App = () => {
   return (
     <>
-      <div className="text-[96px] text-red-500">Hello World!!!</div>
-      <Button>Click Me </Button>
+      <h1>Pizza Admin</h1>
+
+      <h2>Current Page:</h2>
+      <br />
+      <Outlet />
     </>
   );
 };

@@ -3,8 +3,10 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "pizza_admin/*": ["./@mf-types/pizza_admin/*"]
+    },
+    "baseUrl": "."
   },
-  "include": ["src"]
+  "include": ["src", "@mf-types"]
 }

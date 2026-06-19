@@ -4,21 +4,25 @@
   "type": "module",
   "private": true,
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./utils": "./src/utils/index.ts"
   },
   "scripts": {
     "typecheck": "tsc"
   },
   "dependencies": {
+    "css-loader": "^7.1.4",
     "html-webpack-plugin": "^5.6.6",
     "mini-css-extract-plugin": "^2.10.0",
     "postcss-loader": "^8.2.1",
-    "css-loader": "^7.1.4",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.4"
   },
   "peerDependencies": {
     "webpack": "^5.105.2",
     "webpack-dev-server": "^5.2.3"
+  },
+  "devDependencies": {
+    "@module-federation/enhanced": "^2.5.1"
   }
 }

@@ -8,7 +8,6 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "strict": true,
-    "baseUrl": "."
+    "strict": true
   }
 }

@@ -6,6 +6,10 @@ const buildDevServer = (paths: TPaths, port: TConfigParams["port"]): DevServerCo
     static: paths.output,
     port: port,
     hot: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+    historyApiFallback: true,
   };
 };
 

@@ -1,0 +1,27 @@
+{
+  "bundler": {
+    "name": "webpack"
+  },
+  "mfConfig": {
+    "name": "pizza_admin",
+    "exposes": {
+      "./RootLayout": "./src/app/RootLayout.tsx",
+      "./routes": "./src/app/router/routes.ts"
+    }
+  },
+  "latestErrorEvent": {
+    "code": "BUILD-001",
+    "message": "Failed to find expose module. #BUILD-001\nargs: {\"exposeModules\":[{\"name\":\"./RootLayout\",\"module\":null,\"request\":\"./src/app/RootLayout.tsx\"}],\"FEDERATION_WEBPACK_PATH\":\"\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/build#build-001",
+    "args": {
+      "exposeModules": [
+        {
+          "name": "./RootLayout",
+          "module": null,
+          "request": "./src/app/RootLayout.tsx"
+        }
+      ],
+      "FEDERATION_WEBPACK_PATH": ""
+    },
+    "timestamp": 1781878722580
+  }
+}

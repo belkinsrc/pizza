@@ -29,7 +29,4 @@ Thumbs.db
 .cache/
 *.tsbuildinfo
 .eslintcache
-
-# Custom — не в репозитории
-SPECIFICATION.md
-photos/
+@mf-types
